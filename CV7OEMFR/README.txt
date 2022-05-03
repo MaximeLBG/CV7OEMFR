@@ -1,24 +1,9 @@
 = CV7OEMFR Library for Arduino =
 
-This library allows an Arduino board to control RC (hobby) servo motors.
+With this library, you can retrieve data from NMEA0183 frames. Of type $IIMWV and $WIXDR.
+After you have downloaded this library. You must extract the compressed file (.zip) in the arduino library on your computer. The default path is "C:\Program Files (x86)\Arduino\libraries\".
+Once the installation is complete. If you want to directly add the library to your code. Go to "sketch", "include a library" and choose "CV7OEMFR". 
+Otherwise if you want to use an example file go to "file", "examples", "CV7OEMFR" and select "DataReceived".
 
 For more information about this library please visit us at
 https://github.com/MaximeLBG/CV7OEMFR.git
-
-== License ==
-
-Copyright (c) 2013 Arduino LLC. All right reserved.
-Copyright (c) 2009 Michael Margolis.  All right reserved.
-
-This library is free software; you can redistribute it and/or
-modify it under the terms of the GNU Lesser General Public
-License as published by the Free Software Foundation; either
-version 2.1 of the License, or (at your option) any later version.
-
-This library is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-Lesser General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public
-License along with this library; if not, write to the Free Software
