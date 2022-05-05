@@ -1,0 +1,21 @@
+#######################################
+# Syntax Coloring Map CV7OEMFR
+#######################################
+
+#######################################
+# Datatypes	(KEYWORD1)
+#######################################
+
+CV7OEMFR	KEYWORD1	CV7OEMFR
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+getTypeTrame	KEYWORD2
+getVitesse	KEYWORD2
+getTemperature	KEYWORD2
+getDirection	KEYWORD2
+
+#######################################
+# Constants	(LITERAL1)
+#######################################
