@@ -11,8 +11,8 @@ CV7OEMFR	KEYWORD1	CV7OEMFR
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-getTypeTrame	KEYWORD2
-getVitesse	KEYWORD2
+getFrameType	KEYWORD2
+getSpeed	KEYWORD2
 getTemperature	KEYWORD2
 getDirection	KEYWORD2
 
