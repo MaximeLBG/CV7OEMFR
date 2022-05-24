@@ -8,7 +8,6 @@ if you want to use my library with an **Ultrasonic Anemometer** and an **ESP32**
 
 ![Image](/Image/Branchement.png)
 
-
 ## How to download
 ### download locally
 
