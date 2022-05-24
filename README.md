@@ -6,7 +6,7 @@ The sensor comes from the lcjcapteur company. You can access it with this link :
 ## Connection
 if you want to use my library with an **Ultrasonic Anemometer** and an **ESP32** to send the data. You can hook it up like this :
 
-![Image](/Image/Branchement.png)
+![Image](/Image/connection.png)
 
 ## How to download
 ### download locally
