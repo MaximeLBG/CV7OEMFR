@@ -1,4 +1,6 @@
-#define Lorawan    //We decide on which system the program should run
+#define Lorawan    /*We decide on which system the program should run ! 
+You are forced to choose between Lorawan or PC. 
+If you work on Adruino IDE choose "#define Lorawan" or if you work on Visual Studio choose "#define PC".*/
 #include "CV7OEMFR.h"
 #include <EEPROM.h>
 #define RXD 16
