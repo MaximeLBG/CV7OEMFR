@@ -21,19 +21,19 @@ private:
   #endif
 
   #ifdef Lorawan
-    String frame;               //Frame retrieved under Lorawan
+    String frame;   //Frame retrieved under Lorawan
   #endif
 
 public:
   #ifdef PC
-    CV7OEMFR(string frame = "");        //Constructor of the class receiving the frame under PC
+    CV7OEMFR(string frame = "");    //Constructor of the class receiving the frame under PC
   #endif
 
   #ifdef Lorawan
-    CV7OEMFR(String frame = "");        //Constructor of the class receiving the frame under Lorawan
+    CV7OEMFR(String frame = "");    //Constructor of the class receiving the frame under Lorawan
   #endif
-    int getFrameType();             // Function that returns "0", "1" or "2" depending on the frame
-    float getSpeed();             // Function that returns Speed ​​(real)
-    float getTemperature();         // Function that returns Temperature ​​(real)
-    float getDirection();           // Function that returns Direction ​​(real)
+    int getFrameType();     // Function that returns "0", "1" or "2" depending on the frame
+    float getSpeed();       // Function that returns Speed ​​(real)
+    float getTemperature(); // Function that returns Temperature ​​(real)
+    float getDirection();   // Function that returns Direction ​​(real)
 };
