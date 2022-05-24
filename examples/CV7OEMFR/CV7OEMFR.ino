@@ -1,3 +1,4 @@
+#define Lorawan    //We decide on which system the program should run
 #include "CV7OEMFR.h"
 #include <EEPROM.h>
 #define RXD 16
@@ -42,15 +43,15 @@ void setup()
 void loop()
 {
  String value=Serial2.readStringUntil('\n');
- //Serial.println(value);  //displays the entire frame
- float temp, dirvent, speed;
+ Serial.println(value);  //displays the entire frame
+ float temp, dir, speeds;
 
  CV7OEMFR* fram;  //Declaring a pointer in the CV7OEMFR class
  fram = new CV7OEMFR(value);    //Half the time the frame will take either the value of parameter 1 or parameter 2
  if(fram->getFrameType() == 1)        //We call the getTypeFrame() function to find out if the frame is in "$IIMWV" or "$WIXDR" format
  {
-  dirvent = fram->getDirection();      //We save the values ​​of getDirection() and getVitesse() in the expected variables
-  speed = fram->getSpeed();
+  dir = fram->getDirection();      //We save the values ​​of getDirection() and getVitesse() in the expected variables
+  speeds = fram->getSpeed();
   one = true;       //dirVit goes to true when the frame is in "$IIMWV" format
  }
   if(fram->getFrameType() == 2)       //We call the getTypeFrame() function to find out if the frame is in "$IIMWV" or "$WIXDR" format
@@ -61,9 +62,9 @@ void loop()
    if (one == true && two == true)      // When both are true, save the results
    {
     Serial.print("The direction is : ");
-    Serial.println(dirvent);
+    Serial.println(dir);
     Serial.print("The speed is : ");
-    Serial.println(speed);
+    Serial.println(speeds);
     Serial.print("The temperature is : ");
     Serial.println(temp);
     one = false; two = false;        //temp and dirVit go to false and start again in the loop
