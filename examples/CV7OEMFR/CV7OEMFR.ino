@@ -10,6 +10,8 @@ int i = 0;        //Variable declaration
 bool one = false, two = false;
 String static strIdModule;
 
+CV7OEMFR* fram = NULL;  //Declaring a pointer in the CV7OEMFR class
+
 void setup()
 { 
  Serial.begin(115200);
@@ -45,11 +47,14 @@ void setup()
 void loop()
 {
  String value=Serial2.readStringUntil('\n');
- Serial.println(value);  //displays the entire frame
+ //Serial.println(value);  //displays the entire frame
  float temp, dir, speeds;
 
- CV7OEMFR* fram;  //Declaring a pointer in the CV7OEMFR class
+ if(fram != NULL)
+  delete fram;
+ 
  fram = new CV7OEMFR(value);    //Half the time the frame will take either the value of parameter 1 or parameter 2
+ 
  if(fram->getFrameType() == 1)        //We call the getTypeFrame() function to find out if the frame is in "$IIMWV" or "$WIXDR" format
  {
   dir = fram->getDirection();      //We save the values ​​of getDirection() and getVitesse() in the expected variables
